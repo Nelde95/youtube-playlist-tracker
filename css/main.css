@@ -1,0 +1,72 @@
+body
+{
+	background-image: url("../conf/BG.png");
+}
+
+
+h1.title
+{
+	font-size:48px;
+	text-align:center;
+}
+
+table
+{
+	width: 100%;
+	table-layout: fixed;
+}
+
+td
+{
+	text-align: center;
+}
+
+button
+{
+	width: 100%;
+}
+
+a:link
+{
+	color: #7777FF;
+}
+
+a:visited
+{
+	color: #AA77FF;
+}
+	
+a:hover
+{
+	color: #FFFFFF;
+}
+
+a:active
+{
+	color: #FF77FF;
+}
+
+table.video
+{
+	width: 500px;
+	border: 1px solid white;
+}
+
+button.spoiler
+{
+	width: auto;
+}
+
+div.outer-main
+{
+	width: 80%;
+	margin: auto;
+	background-color:rgba(0, 0, 0, 0.7);
+	border:80px;
+}
+
+div.inner-main
+{
+	margin: 20px;
+	color: white;
+}

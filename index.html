@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="conf/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="conf/auth.json"></script>
+		<script type="text/javascript" src="conf/config.json"></script>
+		<script type="text/javascript" src="js/db_init.js"></script>
+		<script type="text/javascript" src="js/display_video.js"></script>
+		<script type="text/javascript" src="js/hide_video.js"></script>
+		<script type="text/javascript" src="js/put_video_in_database.js"></script>
+		<script type="text/javascript" src="js/check_filter.js"></script>
+		<script type="text/javascript" src="js/fetch_video_data.js"></script>
+		<script type="text/javascript" src="js/load_videos.js"></script>
+		<script type="text/javascript" src="js/set_video_status.js"></script>
+	</head>
+
+	<body>
+		<div class="outer-main">
+			<div class="inner-main">
+				<div id="title"></div>
+				<div id="videos"></div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		load_videos();
+		fetch_video_data();
+
+		/* Reload videos after having
+		   fetched the most recent ones */
+		load_videos();
+	</script>
+</html>
