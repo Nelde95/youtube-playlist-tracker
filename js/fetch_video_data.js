@@ -48,7 +48,6 @@ function fetch_video_data()
 					{
 						// Fetch timestamp of most recent video that is saved in the database
 						let lastTimestamp = rs.rows.item(0)["max(video.timestamp)"];
-						console.log(lastTimestamp);
 
 						let done = false;
 						// Find uploads for channels who match id
@@ -61,9 +60,6 @@ function fetch_video_data()
 							{Accept: "application/json"}
 						)
 						.then(promise => {return promise.json();});
-
-						console.log(playlist);
-						console.log(playlistResponse);
 
 						// Keep going until last page
 						while('nextPageToken' in playlistResponse)
